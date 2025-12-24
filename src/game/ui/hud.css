@@ -1,0 +1,151 @@
+.hud-root {
+    position: fixed;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    color: #ff751f;
+    letter-spacing: 0.5px;
+  }
+  
+  .hud-title {
+    font-size: 12px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+  }
+  
+  .hud-panel {
+    width: 170px;
+    padding: 12px 12px;
+    border-radius: 14px;
+    background: rgba(10, 14, 20, 0.55);
+    border: 1px solid rgba(255, 117, 31, 0.22);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  .hud-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 117, 31, 0.10);
+  }
+  
+  .hud-row:last-of-type {
+    border-bottom: none;
+  }
+  
+  .hud-label {
+    font-size: 11px;
+    opacity: 0.8;
+  }
+  
+  .hud-value {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .boost-icon {
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: right;
+    opacity: 0.25;
+    transition: opacity 0.15s ease, text-shadow 0.15s ease;
+  }
+  
+  .boost-icon.boosting {
+    text-shadow: 0 0 6px #ff751f, 0 0 14px #ff751f;
+  }
+  /* =========================
+   CONTROLS — ULTRA MINIMAL (BOTTOM STRIP)
+   Transparent until hover
+   ========================= */
+
+.controls-min {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #ff751f;
+  letter-spacing: 0.35px;
+
+  /* invisible-ish by default */
+  opacity: 0.10;
+
+  /* allow hover interaction */
+  pointer-events: auto;
+
+  transition: opacity 0.18s ease;
+  user-select: none;
+}
+
+.controls-min:hover {
+  opacity: 0.90;
+}
+
+.controls-min-title {
+  font-size: 10px;
+  opacity: 0.75;
+}
+
+.controls-min-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 10px;
+  opacity: 0.75;
+}
+
+.controls-min-item {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.controls-min-key {
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+.controls-min-desc {
+  font-weight: 500;
+  opacity: 0.70;
+}
+
+.controls-min-sep {
+  opacity: 0.25;
+}
+/* ===== Day/Night Toast (top-left) ===== */
+.dn-toast {
+  position: fixed;
+  left: 18px;
+  top: 18px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(10, 14, 20, 0.55);
+  border: 1px solid rgba(255, 117, 31, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #ff751f;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.dn-toast.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
