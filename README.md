@@ -3,7 +3,7 @@ A fast-paced drone flight game set in a procedural city. Fly through dynamically
 
 The project is built as a technical prototype focusing on systems design, performance, and gameplay feel rather than polished content.
 
-#Core Features
+# Core Features
 
 Procedural City Streaming
 	•	Chunk-based city and terrain generation
@@ -37,7 +37,7 @@ HUD System
 	•	Combo multiplier and gate progress display
 	•	Aviation-inspired mono-style presentation
 
-#Technical Stack
+# Technical Stack
 	•	Three.js for rendering
 	•	Rapier (WebAssembly) for physics
 	•	TypeScript architecture
@@ -45,8 +45,7 @@ HUD System
 	•	Fixed-timestep physics loop
 	•	Event-based collision handling
 
-#Project Status
-
+# Project Status
 This project is currently paused after reaching a stable prototype stage.
 The foundation for city generation, drone control, and gameplay scoring is complete.
 
@@ -58,8 +57,7 @@ Future expansion ideas include:
 	•	Performance optimization for cloud deployment
 
 
-#Purpose
-
+# Purpose
 This project serves as:
 	•	A gameplay systems experiment
 	•	A procedural environment prototype
@@ -67,7 +65,7 @@ This project serves as:
 	•	A foundation for a potential full game or simulation product
 
 
-#Disclaimer
+# Disclaimer
 
 This is an experimental prototype intended for learning, iteration, and exploration.
 Assets are procedural and minimal by design.
