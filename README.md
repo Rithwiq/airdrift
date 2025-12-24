@@ -5,25 +5,25 @@ The project is built as a technical prototype focusing on systems design, perfor
 
 # Core Features
 
-Procedural City Streaming
+# Procedural City Streaming
 	•	Chunk-based city and terrain generation
 	•	Roads with realistic junctions, markings, sidewalks, curbs, and crossings
 	•	Buildings, vehicles, vegetation, props, and street lighting
 	•	Seamless streaming based on drone position
 
-Drone Flight System
+# Drone Flight System
 	•	Physics-driven drone using Rapier
 	•	Altitude-locked arcade control model
 	•	Yaw-based steering with smooth camera follow
 	•	Speed-based field-of-view scaling for motion feedback
 
-Gate-Based Gameplay
+# Gate-Based Gameplay
 	•	Dynamic gate spawning ahead of the drone based on direction of travel
 	•	Gates reposition continuously to form an endless course
 	•	No repetitive straight-line gate placement
 	•	Gates align to flight direction and urban layout
 
-Scoring & Combo System
+# Scoring & Combo System
 	•	Base score for passing gates
 	•	Centering bonus for precision flying
 	•	Speed bonus for aggressive flight
@@ -31,7 +31,7 @@ Scoring & Combo System
 	•	Combo decay over time without scoring
 	•	Penalties applied on collisions
 
-HUD System
+# HUD System
 	•	Real-time speed, altitude, orientation
 	•	Score with smooth animated increments
 	•	Combo multiplier and gate progress display
